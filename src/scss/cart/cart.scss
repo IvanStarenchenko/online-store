@@ -62,6 +62,7 @@
         text-transform: uppercase;
         margin-bottom: 70px;
     }
+
     &__details {
         background: #3C4242;
     }
@@ -80,6 +81,7 @@
     flex-direction: column;
     margin-bottom: 100px;
     row-gap: 100px;
+
     &__product {
     }
 }
@@ -88,6 +90,7 @@
     grid-template-columns: 371px 75px 105px 50px 75px 75px ;
     align-items: center;
     justify-content: space-between;
+    
     &:not(:last-child){
         padding-bottom: 50px;
         border-bottom: 1px solid #BEBCBD;;
