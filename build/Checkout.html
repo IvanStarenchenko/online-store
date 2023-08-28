@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html"><img src="img/header/Logo.png" alt=""></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Shop</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Men</a></li>
+                        <li class="menu__item"><a href="products.html" class="menu__item-link" data-scroll>Women</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Combos</a></li>
+                        <li class="menu__item"><a href="sign-up.html" class="menu__item-link" data-scroll>Joggers</a></li>
+                    </ul>
+                </nav>
+                <input class="search" type="text" placeholder="Search">
+                <div class="navbar__actions actions-navbar">
+                    <a class="actions-navbar__favorite"><img src="img/header/svg/heart.svg" alt=""></a>
+                    <a class="actions-navbar__user" href="account.html"><img src="img/header/svg/user.svg" alt=""></a>
+                    <a class="actions-navbar__cart" href="cart.html"><img src="img/header/svg/shopping cart.svg" alt=""></a>
+                </div>
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Main Page -->
+    <main>
+        <section class="details">
+            <div class="container">
+                <div class="details__text">
+                    <div class="details__links">
+                        <span>Home</span>
+                        <span>My Account</span>
+                        <span>Check Out</span>
+                    </div>
+                    <div class="details__title title">Check Out</div>
+                    <div class="details__subtitle subtitle">Billing Details</div>
+                </div>
+                <div class="details__group">
+                    <div class="details__block">
+                        <div class="details__block-top">
+                            <label>
+                                <p>First Name*</p>
+                                <input type="text" placeholder="First Name">
+                            </label>
+                            <label>
+                                <p>Last Name*</p>
+                                <input type="text" placeholder="Last Name">
+                            </label>
+                            <label>
+                                <p>Company Name</p>
+                                <input type="text" placeholder="Company Name">
+                            </label>
+                            <label>
+                                <p>Country / Region*</p>
+                                <input type="text" placeholder="Country / Region">
+                            </label>
+                            <label>
+                                <p>Street Address*</p>
+                                <input type="text" placeholder="House number and street name">
+                            </label>
+                            <label>
+                                <p>Apt, suite, unit</p>
+                                <input type="text" placeholder="apartment, suite, unit, etc. (optional)">
+                            </label>
+                        </div>
+                        <div class="details__block-bottom">
+                            <div class="details__inputs">
+                                <label>
+                                    <p>City*</p>
+                                    <input type="text" placeholder="Town / City">
+                                </label>
+                                <label>
+                                    <p>State*</p>
+                                    <div class="wrapper">
+                                        <div class="details-accordion js-accordion">
+                                            <div class="details-accordion__block js-accordion-block">
+                                                <div class="details-accordion__title js-accordion-trigger" aria-expanded="false">
+                                                    State
+                                                </div>
+                                                
+                                                <div class="menu__content js-accordion-content" aria-hidden="true">
+                                                    <div>
+                                                        <ul class="details-accordion__filter-list">
+                                                            <li>America</li>
+                                                            <li>America</li>
+                                                            <li>America</li>
+                                                            <li>America</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label>
+                                    <p>Postal Code*</p>
+                                    <input type="number" placeholder="Postal Code">
+                                </label>
+                                <label>
+                                    <p>Phone*</p>
+                                    <input type="number" placeholder="Phone">
+                                </label>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="details__block">
+                        <div class="details__summary summary-inner">
+                            <h3 class="summary-inner__title">Order Summary</h3>
+                            <div class="summary-inner__products">
+                                <div class="summary-inner__product product-summary">
+                                    <img src="img/cart/01.png" class="product-summary__image" alt="">
+                                    <div class="product-summary__text">
+                                        <div class="product-summary__name">Blue Flower Print Crop Top <span>x 1</span></div>
+                                        <div class="product-summary__color">Color : <span>Yellow</span> </div>
+                                    </div>
+                                    <div class="product-summary__price">$29.00</div>
+                                </div>
+                                <div class="summary-inner__product product-summary">
+                                    <img src="img/cart/02.png" class="product-summary__image" alt="">
+                                    <div class="product-summary__text">
+                                        <div class="product-summary__name">Levender Hoodie <span>x 2</span></div>
+                                        <div class="product-summary__color">Colour : <span> Levender</span></div>
+                                    </div>
+                                    <div class="product-summary__price">$119.00</div>
+                                </div>
+                                <div class="summary-inner__product product-summary">
+                                    <img src="img/cart/03.png" class="product-summary__image" alt="">
+                                    <div class="product-summary__text">
+                                        <div class="product-summary__name">Black Sweatshirt<span>x 2</span></div>
+                                        <div class="product-summary__color">Color : <span>Black </span></div>
+                                    </div>
+                                    <div class="product-summary__price">$123.00</div>
+                                </div>
+                            </div>
+                            <div class="summary-inner__subtotal summary-item">
+                                <div class="summary-item__name summary-name">Subtotal <span>( 3 items )</span></div>
+                                <div class="summary-item__price summary-price">$513.00</div>
+                            </div>
+                            <div class="summary-inner__subtotal summary-item">
+                                <div class="summary-item__name summary-name">Savings</div>
+                                <div class="summary-item__price summary-price">-$30.00</div>
+                            </div>
+                            <div class="summary-inner__subtotal summary-item">
+                                <div class="summary-item__name summary-name">Shipping</div>
+                                <div class="summary-item__price summary-price">-$5.00</div>
+                            </div>
+                            <div class="summary-inner__subtotal summary-item">
+                                <div class="summary-item__name summary-name">Total</div>
+                                <div class="summary-item__price summary-price">$478.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details__btn">
+                        <a class="details__button" href="#">Continue to delivery</a>
+                        <label>
+                            <input type="checkbox">
+                            <p>Save my information for a faster checkout</p>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="choise">
+            <div class="container">
+                <div class="choise__block addres-inner">
+                    <h3 class="addres-inner__title choise-title">Shipping Address</h3>
+                    <p class="addres-inner__subtitle choise-sub">Select the address that matches your card or payment method.</p>
+                    <div class="choise__body">
+                        <div class="addres-inner__select adress-payment-inner">
+                            <div class="adress-payment-inner__same">
+                                <input type="radio" id="addresChoice1" name="addres" value="same"/>
+                                <label class="choise-label" for="contactChoice1">Same as Billing address</label>
+                            </div>
+                            <div class="adress-payment-inner__different">
+                                <input type="radio" id="addresChoice2" name="addres" value="different"/>
+                                <label class="choise-label" for="contactChoice2">Use a different shipping address</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choise__block method-inner">
+                    <h3 class="method-inner__title choise-title">Shipping Method</h3>
+                    <div class="choise__body">
+                        <div class="method-inner__arrives choise-label">Arrives by Monday, June 7</div>
+                        <div class="method-inner__charges charges-inner">
+                            <div class="charges-inner__text">
+                                <p class="choise-label">Delivery Charges</p>
+                                <p class='choise-sub'>Additional fess may apply</p>
+                            </div>
+                            <div class="charges-inner__price">$5.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choise__block payment-inner">
+                    <h3 class="payment-inner__title choise-title">Payment Method</h3>
+                    <p class="payment-inner__subtitle choise-sub">All transactions are secure and encrypted.</p>
+                    <div class="choise__body">
+                        <div class="payment-inner__select select-payment-inner">
+                            <div class="select-payment-inner__cards">
+                                <input type="radio" id="paymentChoice1" name="payment" value="card"/>
+                                <label class="choise-label" for="contactChoice1">Credit Card</label>
+                                <p class="choise-sub">We accept all major credit cards.</p>
+
+                                <div class="select-payment-inner__images">
+                                    <img src="img/checkout/google.png" alt="">
+                                    <img src="img/checkout/visa.png" alt="">
+                                    <img src="img/checkout/payypal.png" alt="">
+                                    <img src="img/checkout/paypass.png" alt="">
+                                </div>
+
+                                <div class="select-payment-inner__inputs">
+                                    <input type="number">
+                                    <input type="text">
+                                    <input type="text">
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <div class="select-payment-inner__cash">
+                                <input type="radio" id="paymentChoice2" name="payment" value="cash"/>
+                                
+                                <label class="choise-label" for="contactChoice2">
+                                    Cash on delivery
+                                    <p class="choise-sub">Pay with cash upon delivery.</p>
+                                </label>
+                            </div>
+                            <div class="select-payment-inner__paypal">
+                                <input type="radio" id="paymentChoice3" name="payment" value="paypal"/>
+                                <label class="choise-label" for="contactChoice2">Paypal</label>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="choise__button">Pay Now</div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container footer__container">
+        <nav class="footer__menu">
+            <ul class="footer__list">
+                <li class="footer__title">Need Help</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Company</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">More Info</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Location</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+        </nav>
+        <div class="footer__groups">
+            <div class="footer__social">
+                <img src="/img/footer/facebook.svg" alt="">
+                <img src="/img/footer/insta.svg" alt="">
+                <img src="/img/footer/twitter.svg" alt="">
+                <img src="/img/footer/link.svg" alt="">
+            </div>
+            <div class="footer__app">
+                <h3 class="footer__title">Download The App </h3>
+                <div class="footer__stores stores-footer">
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/google.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/apple.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Popular Categories</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+    </div>
+</footer>
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

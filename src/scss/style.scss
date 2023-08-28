@@ -1,0 +1,58 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './global';
+
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './headerSign';
+@import './footer';
+@import './home';
+@import './home-blocks/brands';
+@import './home-blocks/hero';
+@import './home-blocks/categories';
+@import './home-blocks/discount';
+@import './home-blocks/fashion';
+@import './home-blocks/feedback';
+@import './home-blocks/limelight';
+@import './home-blocks/new';
+@import './home-blocks/saving';
+@import './home-blocks/select';
+
+// --------blocks
+@import './products-blocks/catalog';
+
+
+// --------DETAIL
+@import './product-detail/product-detail';
+@import './product-detail/product-description';
+@import './product-detail/product-similar';
+
+// ----------------- CART
+@import './cart/cart';
+
+// ----------------- checkout
+@import './checkout/checkout';
+
+// ----------------- account
+@import './account/info/info.scss';
+@import './account/wish/wishlist.scss';
+@import './account/orders/orders.scss';
+@import './account/orders/order-details.scss';
+
+
+
+
+// ------------------sign
+@import './sign/sign-up';
+@import './sign/sign-in';
+@import './sign/check';
+@import './sign/verification';
+@import './sign/new-pass';
+
+
+
+
+// Libs
+ @import './libs/swiper';
+

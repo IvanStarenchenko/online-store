@@ -1,0 +1,61 @@
+.feedback {
+    margin-bottom: 70px;
+}
+
+.feedback-swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.slide-feedback {
+    width: 396px;
+    height: 292px;
+    padding: 23px;
+    border-radius: 10px;
+    border: 1.8px solid #BEBCBD;
+		
+}
+.person{
+    width: 65px;
+    height: 65px;
+}
+.card-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+		&__person {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;    
+		}
+
+		&__name {
+            color: $mainColor;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.44px;
+		}
+
+		&__text {
+           overflow: hidden;
+            color: #807D7E;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.28px;
+		}
+}
+.feedback-swiper-pagination {
+    margin-top: 20px;
+    text-align: center;
+    span{
+        background-color: $mainColor;
+    }
+}
+.feedback-swiper-button-prev {
+}
+.feedback-swiper-button-next {
+}

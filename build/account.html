@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html"><img src="img/header/Logo.png" alt=""></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Shop</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Men</a></li>
+                        <li class="menu__item"><a href="products.html" class="menu__item-link" data-scroll>Women</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Combos</a></li>
+                        <li class="menu__item"><a href="sign-up.html" class="menu__item-link" data-scroll>Joggers</a></li>
+                    </ul>
+                </nav>
+                <input class="search" type="text" placeholder="Search">
+                <div class="navbar__actions actions-navbar">
+                    <a class="actions-navbar__favorite"><img src="img/header/svg/heart.svg" alt=""></a>
+                    <a class="actions-navbar__user" href="account.html"><img src="img/header/svg/user.svg" alt=""></a>
+                    <a class="actions-navbar__cart" href="cart.html"><img src="img/header/svg/shopping cart.svg" alt=""></a>
+                </div>
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Main Page -->
+    <main class="account">
+        <div class="container">
+            <div class="account__content">
+                <div class="account__aside aside-inner">
+                        <div class="aside-inner__links">
+                            <a href="#">Home</a>
+                            <a href="#">My Account</a>
+                            <a href="#">Personal Info</a>
+                        </div>
+                        <div class="aside-inner__welcome">
+                            <h3 class="aside-inner__name title">Hello Jhanvi</h3>
+                            <p class="aside-inner__text">Welcome to your Account</p>
+                        </div>
+                        <nav class="aside-inner__nav">
+                            <ul class="aside-inner__list">
+                                <li class="aside-inner__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                        <path d="M15.5833 8.39473L15.5138 7.45768C15.4501 6.59928 14.7083 5.93421 13.8146 5.93421H11.9937M5.5 17.4167H4.45365C3.465 17.4167 2.68398 16.609 2.75442 15.6594L3.36283 7.45769C3.42651 6.59928 4.16831 5.93421 5.06207 5.93421H6.88298M6.88298 5.93421V4.29385C6.88298 2.93494 8.02705 1.83333 9.43833 1.83333C10.8496 1.83333 11.9937 2.93494 11.9937 4.29385V5.93421M6.88298 5.93421H11.9937M15.5833 13.75C15.5833 14.7625 14.7625 15.5833 13.75 15.5833C12.7375 15.5833 11.9167 14.7625 11.9167 13.75M10.0833 19.25H17.4167C18.4292 19.25 19.25 18.4292 19.25 17.4167V12.8333C19.25 11.8208 18.4292 11 17.4167 11H10.0833C9.07081 11 8.25 11.8208 8.25 12.8333V17.4167C8.25 18.4292 9.07081 19.25 10.0833 19.25Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <a href="#">My orders</a>  
+                                </li>
+                                <li class="aside-inner__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99486 4.93012C8.49535 3.18261 5.99481 2.71253 4.11602 4.31273C2.23723 5.91293 1.97273 8.58839 3.44815 10.4809C4.67486 12.0545 8.38733 15.3732 9.60407 16.4473C9.7402 16.5675 9.80827 16.6276 9.88766 16.6512C9.95695 16.6718 10.0328 16.6718 10.1021 16.6512C10.1815 16.6276 10.2495 16.5675 10.3857 16.4473C11.6024 15.3732 15.3149 12.0545 16.5416 10.4809C18.017 8.58839 17.7848 5.8961 15.8737 4.31273C13.9626 2.72936 11.4944 3.18261 9.99486 4.93012Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <a href="#">Wishlist</a>                               
+                                </li>
+                                <li class="aside-inner__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10.0002 11.6667C12.3013 11.6667 14.1668 9.80119 14.1668 7.5C14.1668 5.19882 12.3013 3.33334 10.0002 3.33334C7.69898 3.33334 5.8335 5.19882 5.8335 7.5C5.8335 9.80119 7.69898 11.6667 10.0002 11.6667ZM10.0002 11.6667C6.31826 11.6667 3.3335 13.9052 3.3335 16.6667M10.0002 11.6667C13.6821 11.6667 16.6668 13.9052 16.6668 16.6667" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <a href="#">My info</a> 
+                                </li>
+                                <li class="aside-inner__item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                        <path d="M14.6667 15.5833L19.25 11M19.25 11L14.6667 6.41667M19.25 11H8.25M8.25 2.75H7.15C5.60986 2.75 4.83978 2.75 4.25153 3.04973C3.73408 3.31338 3.31338 3.73408 3.04973 4.25153C2.75 4.83978 2.75 5.60986 2.75 7.15V14.85C2.75 16.3901 2.75 17.1602 3.04973 17.7485C3.31338 18.2659 3.73408 18.6866 4.25153 18.9503C4.83978 19.25 5.60986 19.25 7.15 19.25H8.25" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <button>Sign out</button> 
+                                </li>
+                            </ul>
+                        </nav>
+                    
+                </div>
+                <section class="account__info info-inner">
+                    <h3 class="info-inner__title content-title">My Info</h3>
+                    <p class="info-inner__subtitle content-subtitle">Contact Details</p>
+                    <div class="info-inner__contacts contacts-inner">
+                        <div class="contacts-inner__block">
+                            <label>
+                                <p>Your Name</p>
+                                <input type="text" placeholder="Jhanvi Shah">
+                            </label>
+                            <button>Change</button>
+                        </div>
+                        <div class="contacts-inner__block">
+                            <label>
+                                <p>Email Address</p>
+                                <input type="email" placeholder="Jhanvi@gmail.com">
+                            </label>
+                            <button>Change</button>
+                        </div>
+                        <div class="contacts-inner__block">
+                            <label>
+                                <p>Phone Number</p>
+                                <input type="number" placeholder="8980252445">
+                            </label>
+                            <button>Change</button>
+                        </div>
+                        <div class="contacts-inner__block">
+                            <label>
+                                <p>Password</p>
+                                <input type="password" placeholder="12345">
+                            </label>
+                            <button>Change</button>
+                        </div>
+                    </div>
+                    <div class="info-inner__adress adress-inner">
+                        <h3 class="adress-inner__title content-title">Address</h3>
+                        <div class="adress-inner__group">
+                            <div class="adress-inner__block">
+                                <div class="adress-inner__name">Jhanvi shah</div>
+                                <div class="adress-inner__number">8980252445</div>
+                                <div class="adress-inner__adress">1/4 Pragatinagar Flats, opp. jain derasar , near Jain
+                                    derasar, Vijaynagar road 
+                                </div>
+                                <div class="adress-inner__settings">
+                                    <div class="adress-inner__setting">Home</div>
+                                    <div class="adress-inner__setting">Default billing address</div>
+                                </div>
+                                <div class="adress-inner__buttons">
+                                    <div class="adress-inner__button">Remove</div>
+                                    <div class="adress-inner__button">Edit</div>
+                                </div>
+                            </div>
+                            <div class="adress-inner__block adress-inner">
+                                <div class="adress-inner__name">Jhanvi shah</div>
+                                <div class="adress-inner__number">8980252445</div>
+                                <div class="adress-inner__adress">1/4 Pragatinagar Flats, opp. jain derasar , near Jain
+                                    derasar, Vijaynagar road 
+                                </div>
+                                <div class="adress-inner__settings">
+                                    <div class="adress-inner__setting">Home</div>
+                                    <div class="adress-inner__setting">Default billing address</div>
+                                </div>
+                                <div class="adress-inner__buttons">
+                                    <div class="adress-inner__button">Remove</div>
+                                    <div class="adress-inner__button">Edit</div>
+                                </div>
+                            </div>
+                            <div class="adress-inner__block adress-inner">
+                                <div class="adress-inner__name">Jhanvi shah</div>
+                                <div class="adress-inner__number">8980252445</div>
+                                <div class="adress-inner__adress">1/4 Pragatinagar Flats, opp. jain derasar , near Jain
+                                    derasar, Vijaynagar road 
+                                </div>
+                                <div class="adress-inner__settings">
+                                    <div class="adress-inner__setting">Office</div>
+                                </div>
+                                <div class="adress-inner__buttons">
+                                    <div class="adress-inner__button">Remove</div>
+                                    <div class="adress-inner__button">Edit</div>
+                                    <div class="adress-inner__button">Set as default</div>
+                                </div>
+                            </div>
+                            <div class="adress-inner__block adress-inner">
+                                <div class="adress-inner__name">Jhanvi shah</div>
+                                <div class="adress-inner__number">8980252445</div>
+                                <div class="adress-inner__adress">1/4 Pragatinagar Flats, opp. jain derasar , near Jain
+                                    derasar, Vijaynagar road 
+                                </div>
+                                <div class="adress-inner__settings">
+                                    <div class="adress-inner__setting">Home2</div>
+                                </div>
+                                <div class="adress-inner__buttons">
+                                    <div class="adress-inner__button">Remove</div>
+                                    <div class="adress-inner__button">Edit</div>
+                                    <div class="adress-inner__button">Set as default</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="account__wishlist wishlist-inner">
+                    <h3 class="wishlist__title content-title">Wishlist</h3>
+                    <div class="wishlist-inner__group">
+                        <div class="wishlist-inner__block">
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                            <img class="wishlist-inner__image" src="img/account/wish/1.png" alt="">
+                            <div class="wishlist-inner__text">
+                                <div class="wishlist-inner__name">Blue Flower Print Crop Top </div>
+                                <div class="wishlist-inner__color">Color : Yellow</div>
+                                <div class="wishlist-inner__quantity">Quantity : 1</div>
+                            </div>
+                            <div class="wishlist-inner__price">$29.00</div>
+                            <div class="wishlist-inner__button">Add to cart</div>
+                        </div>
+                        <div class="wishlist-inner__block">
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                            <img class="wishlist-inner__image" src="img/account/wish/2.png" alt="">
+                            <div class="wishlist-inner__text">
+                                <div class="wishlist-inner__name">Yellow Flower Print Dress</div>
+                                <div class="wishlist-inner__color">Color : Yellow</div>
+                                <div class="wishlist-inner__quantity">Quantity : 1</div>
+                            </div>
+                            <div class="wishlist-inner__price">$78.00</div>
+                            <div class="wishlist-inner__button">Add to cart</div>
+                        </div>
+                        <div class="wishlist-inner__block">
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                            <img class="wishlist-inner__image" src="img/account/wish/3.png" alt="">
+                            <div class="wishlist-inner__text">
+                                <div class="wishlist-inner__name">White Hoodie long sleeve</div>
+                                <div class="wishlist-inner__color">Color : White</div>
+                                <div class="wishlist-inner__quantity">Quantity : 1</div>
+                            </div>
+                            <div class="wishlist-inner__price">$134.00</div>
+                            <div class="wishlist-inner__button">Add to cart</div>
+                        </div>
+                        <div class="wishlist-inner__block">
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                            <img class="wishlist-inner__image" src="img/account/wish/4.png" alt="">
+                            <div class="wishlist-inner__text">
+                                <div class="wishlist-inner__name">Brown men’s long sleeve T-shirt</div>
+                                <div class="wishlist-inner__color">Color : Brown</div>
+                                <div class="wishlist-inner__quantity">Quantity : 1</div>
+                            </div>
+                            <div class="wishlist-inner__price">$93.00</div>
+                            <div class="wishlist-inner__button">Add to cart</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="account__orders orders-inner">
+                    <h3 class="orders-inner__title content-title">My Orders</h3>
+                    <nav class="orders-inner__nav">
+                        <ul class="orders-inner__list">
+                            <li class="orders-inner__item active-orders-link">Active</li>
+                            <li class="orders-inner__item">Cancelled</li>
+                            <li class="orders-inner__item">Completed</li>
+                        </ul>
+                    </nav>
+                    <div class="orders-inner__content content-active">
+                        <div class="content-active__group">
+                            <div class="content-active__block">
+                                <div class="content-active__order">
+                                    <div class="content-active__left">
+                                        <div class="content-active__number">Order no: #123456789</div>
+                                        <div class="content-active__order-date content-info">Order Date : <span>2 June 2023 2:40 PM</span></div>
+                                        <div class="content-active__delivery-date content-info">Estimated Delivery Date : <span>8 June 2023</span></div>
+                                    </div>
+                                    <div class="content-active__right">
+                                        <div class="content-active__status content-info">Order Status : Inprogress </div>
+                                        <div class="content-active__payment content-info">Payment Method : Cash on delivery</div>
+                                    </div>
+                                </div>
+                                <div class="content-active__product">
+                                    <div class="content-active__card">
+                                        <img class="content-active__image" src="img/account/wish/1.png" alt="">
+                                        <div class="content-active__text">
+                                            <div class="content-active__name">Black Printed T-shirt</div>
+                                            <div class="content-active__color content-info">Colour : <span>Pink</span></div>
+                                            <div class="content-active__quantity content-info">Qty :  <span>1</span></div>
+                                            <div class="content-active__total content-info">Total : $23.00</div>
+                                        </div>
+                                    </div>
+                                    <button class="content-active__btn">View Detail</button>
+                                </div>
+                            </div>
+                            <div class="content-active__block">
+                                <div class="content-active__order">
+                                    <div class="content-active__left">
+                                        <div class="content-active__number">Order no: #123456789</div>
+                                        <div class="content-active__order-date content-info">Order Date : <span>2 June 2023 2:40 PM</span></div>
+                                        <div class="content-active__delivery-date content-info">Estimated Delivery Date : <span>8 June 2023</span></div>
+                                    </div>
+                                    <div class="content-active__right">
+                                        <div class="content-active__status content-info">Order Status : Inprogress </div>
+                                        <div class="content-active__payment content-info">Payment Method : Cash on delivery</div>
+                                    </div>
+                                </div>
+                                <div class="content-active__product">
+                                    <div class="content-active__card">
+                                        <img class="content-active__image" src="img/account/wish/2.png" alt="">
+                                        <div class="content-active__text">
+                                            <div class="content-active__name">Printed blue & white Cote </div>
+                                            <div class="content-active__color content-info">Colour : <span>White</span> </div>
+                                            <div class="content-active__quantity content-info">Qty : <span>1</span></div>
+                                            <div class="content-active__total content-info">Total : $143.00</div>
+                                        </div>
+                                    </div>
+                                    <button class="content-active__btn">View Detail</button>
+                                </div>
+                            </div>
+                            <div class="content-active__block">
+                                <div class="content-active__order">
+                                    <div class="content-active__left">
+                                        <div class="content-active__number">Order no: #123456789</div>
+                                        <div class="content-active__order-date content-info">Order Date : <span>2 June 2023 2:40 PM</span></div>
+                                        <div class="content-active__delivery-date content-info">Estimated Delivery Date : <span>8 June 2023</span></div>
+                                    </div>
+                                    <div class="content-active__right">
+                                        <div class="content-active__status content-info">Order Status : Inprogress </div>
+                                        <div class="content-active__payment content-info">Payment Method : Cash on delivery</div>
+                                    </div>
+                                </div>
+                                <div class="content-active__product">
+                                    <div class="content-active__card">
+                                        <img class="content-active__image" src="img/account/wish/3.png" alt="">
+                                        <div class="content-active__text">
+                                            <div class="content-active__name">Black Printed T-shirt</div>
+                                            <div class="content-active__color content-info">Colour : <span>Blue</span> </div>
+                                            <div class="content-active__quantity content-info">Qty : <span>1</span></div>
+                                            <div class="content-active__total content-info">Total : $93.00</div>
+                                        </div>
+                                    </div>
+                                    <button class="content-active__btn">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="account__orders-details details-inner">
+                    <h3 class="details-inner__title content-title"> <button> < </button> Order Details</h3>
+                    <div class="details-inner__order-info">
+                        <div class="details-inner__left">
+                            <div class="details-inner__number">Order no: #123456789</div>
+                            <div class="details-inner__placed">Placed On  2 June 2023 2:40 PM </div>
+                        </div>
+                        <div class="details-inner__total">Total : <span>$143.00</span></div>
+                    </div>
+                    <div class="details-inner__progress progess-line">
+                        <span class="progess-line__circle progress-ready"> <p>Order Placed</p> </span>
+                        <span class="progess-line__circle progress-inprogress"> <p>Inprogress</p> </span>
+                        <span class="progess-line__circle progress-notready"> <p>shipped</p> </span>
+                        <span class="progess-line__circle progress-notready progress-notready--end"><p>Delivered</p> </span>
+                    </div>
+                    <div class="details-inner__message">
+                        <div class="details-inner__time">8 June 2023 3:40 PM   </div>
+                        <div class="details-inner__verified">Your order has been successfully verified.</div>
+                    </div>
+                    <div class="details-inner__products">
+                        <div class="details-inner__product">
+                            <div class="details-inner__card">
+                                <img src="img/account/wish/1.png" alt="" class="details-inner__image">
+                                <div class="details-inner__text">
+                                    <div class="details-inner__name">Printed white cote</div>
+                                    <div class="details-inner_color">Color : <span>White</span></div>  
+                                </div>
+                            </div>
+                            <div class="details-inner__quantity">
+                                Qty : <span>1</span>
+                            </div>
+                            <div class="details-inner__price">$29.00</div>
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                        </div>
+                        <div class="details-inner__product">
+                            <div class="details-inner__card">
+                                <img src="img/account/wish/2.png" alt="" class="details-inner__image">
+                                <div class="details-inner__text">
+                                    <div class="details-inner__name">Printed white cote</div>
+                                    <div class="details-inner_color">Color : <span>White</span></div>  
+                                </div>
+                            </div>
+                            <div class="details-inner__quantity">
+                                Qty : <span>1</span>
+                            </div>
+                            <div class="details-inner__price">$29.00</div>
+                            <div class="wishlist-inner__delete">
+                                <span class="horizontal"></span>
+                                <span class="vertical"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container footer__container">
+        <nav class="footer__menu">
+            <ul class="footer__list">
+                <li class="footer__title">Need Help</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Company</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">More Info</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Location</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+        </nav>
+        <div class="footer__groups">
+            <div class="footer__social">
+                <img src="/img/footer/facebook.svg" alt="">
+                <img src="/img/footer/insta.svg" alt="">
+                <img src="/img/footer/twitter.svg" alt="">
+                <img src="/img/footer/link.svg" alt="">
+            </div>
+            <div class="footer__app">
+                <h3 class="footer__title">Download The App </h3>
+                <div class="footer__stores stores-footer">
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/google.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/apple.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Popular Categories</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+    </div>
+</footer>
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

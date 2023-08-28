@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Causten;
+    font-weight: 700;
+    src: url("../fonts/Causten-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Causten;
+    font-weight: 600;
+    src: url("../fonts/Causten-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Causten;
+    font-weight: 500;
+    src: url("../fonts/Causten-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Causten;
+    font-weight: 400;
+    src: url("../fonts/Causten-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Core Sans C';
+    src: local('Core Sans C 45 Regular'), local('Core-Sans-C-45-Regular'),
+        url('CoreSansC-45Regular.woff2') format('woff2'),
+        url('CoreSansC-45Regular.woff') format('woff'),
+        url('CoreSansC-45Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Core Sans C';
+src: local('Core Sans C 65 Bold'), local('Core-Sans-C-65-Bold'),
+    url('CoreSansC-65Bold.woff2') format('woff2'),
+    url('CoreSansC-65Bold.woff') format('woff'),
+    url('CoreSansC-65Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}

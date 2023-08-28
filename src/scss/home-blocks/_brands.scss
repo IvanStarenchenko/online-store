@@ -1,0 +1,53 @@
+.brands {
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+        &__title {
+            font-size: 50px;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 25px;
+        }
+    
+        &__subtitle {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 84px;
+            span{
+                color: #FBD103;
+            }
+        }
+    
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(5 , 177px);
+            grid-template-rows: repeat(1 , 85px);
+            align-items: center;
+            justify-content: center;
+            column-gap: 24px;
+        }
+    
+        &__item {
+            position: relative;
+            border-radius: 12px;
+            height: 100%;
+            background: #FFF;
+            cursor: pointer;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 70%;
+                transform: translate(-50% , -50%);
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .brands-container{
+        border-radius: 12px;
+        padding-top: 43px;
+        padding-bottom: 59px;
+        background: $mainColor;
+    }

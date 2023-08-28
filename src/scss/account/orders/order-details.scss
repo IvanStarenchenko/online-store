@@ -1,0 +1,246 @@
+.account {
+
+    &__orders-details {
+    }
+}
+.details-inner {
+
+    &_color {
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        button{
+            background-color: transparent;
+            font-size: 18px;
+        }
+    }
+
+    &__order-info {
+        padding: 27px 47px;
+        margin-bottom: 50px;
+        border-radius: 8px;
+        background: #F6F6F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+    }
+
+    &__number {
+        margin-bottom: 10px;
+        color: #3C4242;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__placed {
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__total {
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        span{
+            color: $mainColor;
+        }
+    }
+
+    &__message {
+        display: flex;
+        align-items: center;
+        position: relative;
+        column-gap: 37px;
+        margin-bottom: 80px;
+        margin-top: 100px;
+        padding: 29px 24px;
+
+        border-radius: 8px;
+        border: 0.5px solid rgba(128, 125, 126, 0.20);
+        background: #F6F6F6;
+
+        &:before{
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 122px;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent; /* Левая сторона треугольника */
+            border-right: 30px solid transparent; /* Правая сторона треугольника */
+            border-bottom: 35px solid #F6F6F6;
+        }
+    }
+
+    &__time {
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__verified {
+        color: #3C4242;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 43px 50px;
+        margin-bottom: 100px;
+        border-radius: 8px;
+        background: #F6F6F6;
+    }
+
+    &__product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child){
+            border-bottom: 1px solid #BEBCBD;
+            padding-bottom: 30px;
+        }
+        color: #3C4242;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.44px;
+        span{
+            color: #807D7E;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        column-gap: 33px;
+    }
+
+    &__image {
+        width: 102px;
+        height: 102px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        
+    }
+
+    &__name {
+    }
+
+    &__quantity {
+    }
+
+    &__price {
+        color: #807D7E;
+
+    }
+}
+.content-title {
+}
+.progess-line {
+    position: relative;
+    width: 560px;
+    background-color: #BEBCBD;
+    height: 4px;
+    margin: 0 auto;
+    span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -175%;
+    }
+    p{
+        width: 95px;
+        margin-top: 31px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        position: relative;
+        right: 30px;
+    }
+
+}
+.progress-ready {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -1%;
+    background-color: $mainColor;
+    border-radius: 50%;
+    
+}
+.progress-inprogress {
+    position: relative;
+    left: 171px;
+    background-color: #BEBCBD;
+    border-radius: 50%;
+    p{
+        right: 25px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        transform: translate(-50% , -50%);
+        background-color: $mainColor;
+    }
+}
+.progress-notready {
+    position: relative;
+    left: 355px;
+    background-color: #BEBCBD;
+    border-radius: 50%;
+    p{
+        right: 18px;
+    }
+    &--end{
+        position: relative;
+        left: 543px;
+        background-color: #BEBCBD;
+        border-radius: 50%;
+        p{
+            right: 22px;
+        }
+    }
+}
+
+
+.wishlist-inner {
+
+    &__delete {
+    }
+}
+.horizontal {
+}
+.vertical {
+}
+

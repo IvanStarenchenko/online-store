@@ -1,0 +1,52 @@
+.fashion {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2 , 613px);
+        grid-template-rows: repeat(1 , 626.5px);
+    }
+
+    &__main {
+        color: #fff;
+        background-image: url("/img/fashion/01.png");
+        padding: 180px 74px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:25px;
+    }
+
+    &__text {
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 800;
+        line-height:147.059%; 
+        letter-spacing: 0.208px;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        padding: 12px 44px;
+        border-radius: 8px;
+        background: #FFF;
+        span{
+            color: #000;
+        }
+    }
+
+    &__image {
+        transform: translateX(-1px);
+        img{
+            width: 100%;
+        }
+    }
+}

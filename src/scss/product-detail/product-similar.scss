@@ -1,0 +1,39 @@
+.product-similar {
+    margin-bottom: 100px;
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(4 , 282px);
+    }
+
+    &__card {
+    }
+}
+
+.card-content {
+
+    &__image {
+    }
+
+    &__fav {
+    }
+
+    &__content {
+    }
+
+    &__text {
+    }
+
+    &__name {
+    }
+
+    &__brand {
+    }
+
+    &__price {
+    }
+}

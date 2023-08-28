@@ -1,0 +1,223 @@
+.account {
+
+    &__content {
+        display: grid;
+        grid-template-columns: 355px 1fr;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+
+    &__aside {
+        margin-top: 23px;
+    }
+}
+.aside-inner {
+    &__links {
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+        margin-bottom: 52px;
+        color: #807D7E;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__welcome {
+    }
+
+    &__name {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        color: #807D7E;
+        font-size: 14px;
+        font-weight: 400;
+        line-height:  239.286%;
+        letter-spacing: 0.28px;
+        margin-bottom: 41px;
+    }
+
+    &__nav {
+        max-width: 295px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 19px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 17px;
+        padding: 11px 0 11px 35px;
+        color: #807D7E;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        border-left: 2px solid transparent;
+        cursor: pointer;
+        transition: background-color 0.3s , border-color 0.3s;
+        &:hover{
+            background-color: #F6F6F6;
+            border-color: #000;
+        }
+        button{
+            color: #807D7E;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+            background-color: transparent;
+        }
+    }
+}
+.info-inner {
+    display: none;
+    &__title{
+        margin-top: 97px;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        margin-bottom: 30px;
+    }
+    &__adress {
+        margin-bottom: 100px;
+    }
+    &__contacts {
+    }
+}
+
+.contacts-inner {
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        color: $mainColor;
+        border-bottom: 1px solid #EDEEF2;
+        button{
+            background-color: transparent;
+            color: #3C4242;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+        }
+        p{
+            color: #807D7E;
+            margin-bottom: 8px;
+        }
+        input{
+            outline: none;
+            color: #3C4242;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+            &::placeholder{
+                color: #3C4242;
+            }
+        }
+
+        padding-bottom: 22px;
+        &:not(:first-child){
+            padding-top: 20px;
+        }
+    }
+}
+
+.adress-inner {
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__group {
+        display: grid;
+        grid-template-columns: repeat(2 , 435px);
+        gap: 25px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: #F6F6F6;
+        border-radius: 12px;
+        padding: 25px 43px;
+    }
+
+    &__name {
+        color: #3C4242;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__number {
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__adress {
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 136%;
+    }
+
+    &__settings {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+
+    &__setting {
+        padding: 7px 20px;
+        border-radius: 8px;
+        border: 1px solid #807D7E;
+
+        color: #807D7E;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__button {
+        color: #3C4242;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        &:not(:last-child){
+            padding-right: 10px;
+            border-right: 1px solid #D9D9D9;
+        }
+    }
+}
+.content-title {
+    color: $mainColor;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 119.643%;
+    letter-spacing: 0.56px;
+}
+.content-subtitle{
+    color: $mainColor;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 152.273% ; 
+    letter-spacing: 0.44px
+}

@@ -1,0 +1,55 @@
+.sign {
+
+    &__inner {
+    }
+}
+.inner-sign {
+
+    &__image {
+    }
+
+    &__body {
+
+    }
+}
+.check {
+    color: #807D7E;
+
+    &__text {
+        span{
+            color: #8A33FD;
+            font-weight: 600;
+        }
+    }
+
+    &__login {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        position: relative;
+        padding-left: 20px;
+        color: #807D7E;
+        &:hover{
+            &::before{
+                left: 5px;
+            }
+        }
+        &::before{
+            content: "<";
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: left 0.3s ease 0s;
+        }
+    }
+}
+
+.sign-text {
+
+    &__title {
+    }
+
+    &__subtitle {
+        
+    }
+}

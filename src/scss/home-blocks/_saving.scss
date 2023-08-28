@@ -1,0 +1,222 @@
+.saving {
+  
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__top {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(3 , 400px);
+        grid-template-rows: repeat(1 , 393px);
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__text {
+    }
+
+    &__bottom {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(2 , 610px);
+        grid-template-rows: repeat(1 , 393px);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.saving {
+
+    &__blocks {
+    }
+
+    &__top {
+    }
+
+    &__block {
+    }
+
+    &__bottom {
+    }
+}
+
+.saving-top-text {
+
+    &__title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 137.255%; 
+        letter-spacing: 0.56px;
+        max-width: 134px;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 11px;
+    }
+
+    &__discount {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 104px;
+    }
+
+    &__bnt {
+        position: relative;
+        padding: 10px 25px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        
+        cursor: pointer;
+        &:before{
+            content: "";
+            position: absolute;
+            top: -63px;
+            left: 50%;
+            background: url("/img/saving/svg/white.svg");
+            background-repeat: no-repeat;
+            width:27px;
+            height: 31px;
+            transform: translateX(-50%);
+            transition: top 0.3s ease 0s;
+        }
+        &:hover{
+            &:before{
+                top: -50px;
+            }
+        }
+    }
+    &__limited{
+        padding: 10px 0;
+        width: 104px;
+        text-align: center;
+        margin-bottom: 28px;
+        border-radius: 4px;
+        background: #3C4242;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+.saving-bottom-text {
+    color: $mainColor;
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 137.255%;
+        letter-spacing: 0.64px;
+        margin-bottom: 10px;
+        max-width: 150px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 11px;
+    }
+
+    &__discount {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 107px;
+    }
+
+    &__bnt {
+        position: relative;
+        padding: 11px 35px;
+        border-radius: 4px;
+        border: 2px solid #3C4242;
+        text-align: center;
+        cursor: pointer;
+        &:before{
+            content: "";
+            position: absolute;
+            top: -73px;
+            left: 50%;
+            background: url("/img/saving/svg/black.svg");
+            width:27px;
+            height: 31px;
+            transform: translateX(-50%);
+            transition: top 0.3s ease 0s;
+        }
+        &:hover{
+            &:before{
+                top: -50px;
+            }
+        }
+    }
+}
+.hawaii,.printed , .cargo , .urban ,.oversize {
+&__text {
+    position: absolute;
+
+}
+}
+.hawaii{
+    &__text {
+        color: #fff;
+        top: 64px;
+        left: 20px;
+    }
+}
+.printed {
+    &__text {
+        text-align: right;
+        color: #fff;
+        top: 34px;
+        right: 26px;
+        .saving-top-text__limited{
+            transform: translateX(49px);
+        }
+        .saving-top-text__title{
+    
+        }
+        .saving-top-text__btn{
+    
+        }
+    }
+   
+}
+.cargo {
+
+    &__text {
+        top: 64px;
+        right: 18px;
+    }
+}
+.urban {
+
+    &__text {
+        top: 45px;
+        right: 120px;
+    }
+}
+.oversize {
+
+    &__text {
+        top: 45px;
+        right: 96px;
+    }
+}
+
+.black-btn{
+    border: 1px solid #000;
+}
