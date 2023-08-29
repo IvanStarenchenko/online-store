@@ -10,6 +10,9 @@
     &__image { 
         width: 100%; 
     }
+    &__input{
+        
+    }
 
     &__body {
         
@@ -76,7 +79,7 @@
         border: 1px solid #3C4242;
         margin-top: 10px;
         color: #807D7E;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         line-height: normal;
         outline: none;
@@ -215,6 +218,13 @@
     }
     &__email {
         margin-bottom: 67px;   
+    }
+    &__password{
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        } 
     }
 }
 .reset{

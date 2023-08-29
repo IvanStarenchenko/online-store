@@ -2,8 +2,7 @@
     border-bottom: 1px solid #BEBCBD;
     padding: 35px 0;
 }
-.container {
-}
+
 .sign-navbar {
     display: flex;
     align-items: center;
@@ -16,11 +15,12 @@
             margin-right: 30px;
 		}
 
-		&__actions {
-		}
+
         &__search{
+            display: flex;
+            align-items: center ;
             width: 184px;
-            padding: 12px 48px;
+            padding: 12px 10px 12px 48px;
             border-radius: 8px;
             background: #F6F6F6;
             outline: none;
@@ -28,6 +28,15 @@
             font-size: 16px;
             font-weight: 500;
             line-height: normal;
+            text-align: center;
+            input{
+                padding-left: 12px;
+                background-color: #F6F6F6;
+                outline: none;
+                height: 100%;
+                width: 100%;
+                
+            }
         }   
 }
 
@@ -39,23 +48,74 @@
         font-size: 18px;
         font-weight: 500;
         line-height: normal;
+
+        &__login , &__sign-up{
+            padding: 12px 48px;
+            cursor: pointer;
+        }
 		&__login {
             border-radius: 8px;
             border: 1px solid #3C4242;
             color: #8A33FD;
             margin-left: 30px;
-            
+            color: $mainColor;
 		}
 
 		&__sign-up {
-            color: #fff;
+            display: block;
             border-radius: 8px;
             background: #8A33FD;
+            span{
+                color: #fff;
+            }
 		}
-        a{
-            padding: 12px 48px;
-            cursor: pointer;
-        }
+       
 }
-.burger {
+
+.actions-sign-navbar {
+    &__language {
+        cursor: pointer;
+       
+       
+        outline: none;
+        padding: 5px 0;
+        font-size: 16px;
+        text-align: center;
+        appearance: none;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 0;
+            background: url('img/down-arrow.svg') no-repeat right center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    max-height: 400px; /* Задайте желаемую ширину */
+  }
+  
+.custom-select select {
+display: flex;
+align-items: center;
+height: 100%;
+padding: 10px 20px 10px 10px;
+border-radius: 5px;
+appearance: none;
+background-image: url('/img/down-arrow.svg'); /* Добавьте изображение для стрелочки */
+background-repeat: no-repeat;
+background-size: 10px;
+background-position: 99%;
+
+}
+
+.custom-select select option {
+padding: 10px;
 }

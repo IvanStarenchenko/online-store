@@ -9,7 +9,37 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body class="body">
-    @@include('./html/_header.html')
+    <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html"><img src="img/header/Logo.png" alt=""></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Shop</a></li>
+                        <li class="menu__item"><a href="mans-products.html" class="menu__item-link" data-scroll>Men</a></li>
+                        <li class="menu__item"><a href="products.html" class="menu__item-link" data-scroll>Women</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Combos</a></li>
+                        <li class="menu__item"><a href="sign-up.html" class="menu__item-link" data-scroll>Joggers</a></li>
+                    </ul>
+                </nav>
+                <label class="search">
+                    <img src="img/header/svg/search.svg" alt="">
+                    <input type="text" placeholder="Search">
+                </label>
+                <div class="navbar__actions actions-navbar">
+                    <a class="actions-navbar__favorite"><img src="img/header/svg/heart.svg" alt=""></a>
+                    <a class="actions-navbar__user" href="account.html"><img src="img/header/svg/user.svg" alt=""></a>
+                    <a class="actions-navbar__cart" href="cart.html"><img src="img/header/svg/shopping cart.svg" alt=""></a>
+                </div>
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
     <main>
         <div class="container ">
             <section class="catalog">
@@ -422,7 +452,7 @@
                     </div>
                     <div class="catalog-products__cards" id="recommended">
                         <div class="catalog-products__card card-content">
-                            <div class="card-content__image"><img src="img/limelight/1.png" alt=""></div>
+                            <div class="card-content__image"><img src="img/limelight/3.png" alt=""></div>
                             <div class="card-content__fav">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <circle cx="17.1291" cy="16.9111" r="16.1796" fill="white"/>
@@ -438,7 +468,7 @@
                             </div>
                         </div>
                         <div class="catalog-products__card card-content">
-                            <div class="card-content__image"><img src="img/limelight/2.png" alt=""></div>
+                            <div class="card-content__image"><img src="img/limelight/1.png" alt=""></div>
                             <div class="card-content__fav">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <circle cx="17.1291" cy="16.9111" r="16.1796" fill="white"/>
@@ -470,7 +500,7 @@
                             </div>
                         </div>
                         <div class="catalog-products__card card-content">
-                            <div class="card-content__image"><img src="img/limelight/3.png" alt=""></div>
+                            <div class="card-content__image"><img src="img/limelight/1.png" alt=""></div>
                             <div class="card-content__fav">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <circle cx="17.1291" cy="16.9111" r="16.1796" fill="white"/>
@@ -502,7 +532,7 @@
                             </div>
                         </div>
                         <div class="catalog-products__card card-content">
-                            <div class="card-content__image"><img src="img/limelight/3.png" alt=""></div>
+                            <div class="card-content__image"><img src="img/limelight/7.png" alt=""></div>
                             <div class="card-content__fav">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <circle cx="17.1291" cy="16.9111" r="16.1796" fill="white"/>
@@ -593,7 +623,86 @@
             </section>
         </div>
     </main>
-    @@include('./html/_footer.html')
+    <footer class="footer">
+    <div class="container footer__container">
+        <nav class="footer__menu">
+            <ul class="footer__list">
+                <li class="footer__title">Need Help</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Company</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">More Info</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__title">Location</li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Track Order</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Returns & Refunds</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">FAQ's</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+            </ul>
+        </nav>
+        <div class="footer__groups">
+            <div class="footer__social">
+                <img src="/img/footer/facebook.svg" alt="">
+                <img src="/img/footer/insta.svg" alt="">
+                <img src="/img/footer/twitter.svg" alt="">
+                <img src="/img/footer/link.svg" alt="">
+            </div>
+            <div class="footer__app">
+                <h3 class="footer__title">Download The App </h3>
+                <div class="footer__stores stores-footer">
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/google.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                    <div class="stores-footer__item">
+                        <img src="/img/footer/apple.svg" alt="">
+                        <div class="stores-footer__text">
+                            <p class="stores-footer__overtitle">Available on the</p>
+                            <h4 class="stores-footer__title">Google Play</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Popular Categories</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+    </div>
+</footer>
 </body>
 <script src="./js/scripts.min.js"></script>
 

@@ -129,3 +129,11 @@ input[type=number] {
       
 }
 
+.hide-button{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+#toggle-password-button{
+    cursor: pointer;
+}

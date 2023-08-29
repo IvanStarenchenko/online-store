@@ -3,6 +3,14 @@
        padding: 50px 0;
     }
     &__email {
-        margin-bottom: 35px;   
+        margin-bottom: 35px;  
+        
+    }
+    &__password{
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        } 
     }
 }
