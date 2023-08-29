@@ -197,6 +197,22 @@ input[type=number] {
   background-color: #3C4242;
 }
 
+.hide-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+
+#toggle-password-button {
+  cursor: pointer;
+}
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #BEBCBD;
@@ -289,11 +305,24 @@ input[type=number] {
 }
 
 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 267px;
   height: 44px;
   padding: 12px 20px;
   border-radius: 8px;
   background: #F6F6F6;
+  position: relative;
+}
+
+.search input {
+  height: 100%;
+  background-color: #F6F6F6;
+  padding-left: 12px;
   outline: none;
 }
 
@@ -360,8 +389,14 @@ input[type=number] {
 }
 
 .sign-navbar__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 184px;
-  padding: 12px 48px;
+  padding: 12px 10px 12px 48px;
   border-radius: 8px;
   background: #F6F6F6;
   outline: none;
@@ -369,6 +404,15 @@ input[type=number] {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  text-align: center;
+}
+
+.sign-navbar__search input {
+  padding-left: 12px;
+  background-color: #F6F6F6;
+  outline: none;
+  height: 100%;
+  width: 100%;
 }
 
 .actions-sign-navbar {
@@ -386,22 +430,81 @@ input[type=number] {
   line-height: normal;
 }
 
+.actions-sign-navbar__login,
+.actions-sign-navbar__sign-up {
+  padding: 12px 48px;
+  cursor: pointer;
+}
+
 .actions-sign-navbar__login {
   border-radius: 8px;
   border: 1px solid #3C4242;
   color: #8A33FD;
   margin-left: 30px;
+  color: #3C4242;
 }
 
 .actions-sign-navbar__sign-up {
-  color: #fff;
+  display: block;
   border-radius: 8px;
   background: #8A33FD;
 }
 
-.actions-sign-navbar a {
-  padding: 12px 48px;
+.actions-sign-navbar__sign-up span {
+  color: #fff;
+}
+
+.actions-sign-navbar__language {
   cursor: pointer;
+  outline: none;
+  padding: 5px 0;
+  font-size: 16px;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+
+.actions-sign-navbar__language:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background: url("img/down-arrow.svg") no-repeat right center;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  max-height: 400px;
+  /* Задайте желаемую ширину */
+}
+
+.custom-select select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("/img/down-arrow.svg");
+  /* Добавьте изображение для стрелочки */
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 99%;
+}
+
+.custom-select select option {
+  padding: 10px;
 }
 
 footer {
@@ -4231,7 +4334,7 @@ footer {
   border: 1px solid #3C4242;
   margin-top: 10px;
   color: #807D7E;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: normal;
   outline: none;
@@ -4384,6 +4487,18 @@ footer {
   margin-bottom: 67px;
 }
 
+.sign-up__password label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .reset__email {
   margin-bottom: 81px;
 }
@@ -4441,6 +4556,18 @@ footer {
 
 .sign-in__email {
   margin-bottom: 35px;
+}
+
+.sign-in__password label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .check {

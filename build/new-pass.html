@@ -14,11 +14,38 @@
         <div class="container">
             <nav class="sign-navbar">
                 <a class="logo" href="index.html"><img src="img/header/Logo.png" alt=""></a>
-                <input class="sign-navbar__search" type="text" placeholder="Search">
+                <label class="sign-navbar__search">
+                    <img src="img/header/svg/search.svg" alt="">
+                    <input type="text" placeholder="Search">
+                </label>
                 <div class="sign-navbar__actions actions-sign-navbar">
-                    <div class="actions-sign-navbar__language">English (united States)</div>   
+                    <div class="custom-select">
+                        <select name="language" id="language-select" class="actions-sign-navbar__language">
+                          <option value="" class="first" required>English (United States)</option>
+                          <option value="dog" class="second">Ukrainian</option>
+                          <option value="cat" class="third">Spanish</option>
+                        </select>
+                      </div>
+                    <!-- <div class="wrapper">
+                        <div class="actions-sign-navbar__menu language-menu js-accordion">
+                            <div class="language-menu__block js-accordion-block">
+                            <div class="language-menu__select js-accordion-trigger" aria-expanded="false">
+                                English (united States)
+                            </div>
+                            <div class="menu__content js-accordion-content" aria-hidden="true">
+                                <div>
+                                    <ul class="language-menu__list">
+                                        <li class="language-menu__list">Ukranian</li>
+                                        <li class="catalog-sizes__list">Spanish</li>
+                                    </ul>
+                                </div>
+                            </div>
+                          
+                            </div>
+                        </div>
+                    </div> -->
                     <a class="actions-sign-navbar__login"  href="new-pass.html">Login</a>
-                    <a class="actions-sign-navbar__sign-up" href="verification.html">Sign Up</a>
+                    <a class="actions-sign-navbar__sign-up" href="verification.html"> <span>Sign Up</span></a>
                 </div>
                 <button class="burger">
                     <span></span>
