@@ -1,0 +1,133 @@
+.account {
+
+    &__info {
+        display: none;
+    }
+}
+.change-inner {
+
+
+    &__subtitle {
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    &__contacts {
+        display: grid;
+        column-gap: 40px;
+        row-gap: 30px;
+        grid-template-columns: repeat(2 , 426px);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__instruction {
+      margin-bottom: 30px;  
+        .inctruction-area{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 895px;
+            padding: 17px 22px 112px 22px;
+            border-radius: 8px;
+            background: #F6F6F6;
+            outline: none;
+            font-family: inherit;
+        }
+    }
+    &__checkbox{
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        margin-bottom: 60px;
+    
+    
+        .change-inner__block{
+            display: flex;
+            align-items: center;
+            color: $mainColor;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+            input[type="checkbox"] {
+                display: none;
+              }
+              
+              /* Стилизация внешнего вида чекбокса */
+              label {
+                position: relative;
+                padding-left: 30px; /* создание места для "псевдо-чекбокса" и галочки */
+                cursor: pointer;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 2px solid #ccc;
+                    background-color: #fff;
+                    border-radius: 3px;
+                  }
+    
+                  &::after {
+                    content: "\2713"; /* Unicode-символ галочки */
+                    position: absolute;
+                    left: 6px;
+                    top: 2px;
+                    font-size: 18px;
+                    color: #fff; /* цвет галочки */
+                    visibility: hidden;
+                  }
+              }
+              
+              /* Изменение внешнего вида псевдо-чекбокса при выборе */
+              input[type="checkbox"]:checked + label::before {
+                background-color: $mainColor; /* измените цвет на свой вкус */
+                border-color: $mainColor;
+              }
+    
+              input[type="checkbox"]:checked + label::before + label::after {
+                visibility: visible;
+              }
+        }
+    }
+    &__buttons{
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        button{
+            padding: 12px 40px;
+            border-radius: 8px;
+            background-color: #F6F6F6;
+            color: #807D7E;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .change-inner__save{
+            background-color: #8A33FD;
+            color: #fff;
+        }
+    }
+
+    .change-input{
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 8px;
+        background: #F6F6F6;
+        outline: none;
+    }
+    .change-label{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.change-contacts-inner {
+    margin-bottom: 32px;
+    &__block {
+    }
+}

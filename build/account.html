@@ -58,23 +58,23 @@
                         </div>
                         <nav class="aside-inner__nav">
                             <ul class="aside-inner__list">
-                                <li class="aside-inner__item">
+                                <li class="aside-inner__item" id="ordersBtn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                         <path d="M15.5833 8.39473L15.5138 7.45768C15.4501 6.59928 14.7083 5.93421 13.8146 5.93421H11.9937M5.5 17.4167H4.45365C3.465 17.4167 2.68398 16.609 2.75442 15.6594L3.36283 7.45769C3.42651 6.59928 4.16831 5.93421 5.06207 5.93421H6.88298M6.88298 5.93421V4.29385C6.88298 2.93494 8.02705 1.83333 9.43833 1.83333C10.8496 1.83333 11.9937 2.93494 11.9937 4.29385V5.93421M6.88298 5.93421H11.9937M15.5833 13.75C15.5833 14.7625 14.7625 15.5833 13.75 15.5833C12.7375 15.5833 11.9167 14.7625 11.9167 13.75M10.0833 19.25H17.4167C18.4292 19.25 19.25 18.4292 19.25 17.4167V12.8333C19.25 11.8208 18.4292 11 17.4167 11H10.0833C9.07081 11 8.25 11.8208 8.25 12.8333V17.4167C8.25 18.4292 9.07081 19.25 10.0833 19.25Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>
-                                    <a href="#">My orders</a>  
+                                    <div>My orders</div>  
                                 </li>
-                                <li class="aside-inner__item">
+                                <li class="aside-inner__item" id="wishlistBtn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99486 4.93012C8.49535 3.18261 5.99481 2.71253 4.11602 4.31273C2.23723 5.91293 1.97273 8.58839 3.44815 10.4809C4.67486 12.0545 8.38733 15.3732 9.60407 16.4473C9.7402 16.5675 9.80827 16.6276 9.88766 16.6512C9.95695 16.6718 10.0328 16.6718 10.1021 16.6512C10.1815 16.6276 10.2495 16.5675 10.3857 16.4473C11.6024 15.3732 15.3149 12.0545 16.5416 10.4809C18.017 8.58839 17.7848 5.8961 15.8737 4.31273C13.9626 2.72936 11.4944 3.18261 9.99486 4.93012Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <a href="#">Wishlist</a>                               
+                                    <div>Wishlist</div>                               
                                 </li>
-                                <li class="aside-inner__item">
+                                <li class="aside-inner__item" id="infoBtn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M10.0002 11.6667C12.3013 11.6667 14.1668 9.80119 14.1668 7.5C14.1668 5.19882 12.3013 3.33334 10.0002 3.33334C7.69898 3.33334 5.8335 5.19882 5.8335 7.5C5.8335 9.80119 7.69898 11.6667 10.0002 11.6667ZM10.0002 11.6667C6.31826 11.6667 3.3335 13.9052 3.3335 16.6667M10.0002 11.6667C13.6821 11.6667 16.6668 13.9052 16.6668 16.6667" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>
-                                    <a href="#">My info</a> 
+                                    <div>My info<div> 
                                 </li>
                                 <li class="aside-inner__item">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -86,7 +86,7 @@
                         </nav>
                     
                 </div>
-                <section class="account__info info-inner">
+                <section class="account__info info-inner" id="info">
                     <h3 class="info-inner__title content-title">My Info</h3>
                     <p class="info-inner__subtitle content-subtitle">Contact Details</p>
                     <div class="info-inner__contacts contacts-inner">
@@ -95,28 +95,28 @@
                                 <p>Your Name</p>
                                 <input type="text" placeholder="Jhanvi Shah">
                             </label>
-                            <button>Change</button>
+                            <button class="changeBtn">Change</button>
                         </div>
                         <div class="contacts-inner__block">
                             <label>
                                 <p>Email Address</p>
                                 <input type="email" placeholder="Jhanvi@gmail.com">
                             </label>
-                            <button>Change</button>
+                            <button class="changeBtn">Change</button>
                         </div>
                         <div class="contacts-inner__block">
                             <label>
                                 <p>Phone Number</p>
                                 <input type="number" placeholder="8980252445">
                             </label>
-                            <button>Change</button>
+                            <button class="changeBtn">Change</button>
                         </div>
                         <div class="contacts-inner__block">
                             <label>
                                 <p>Password</p>
                                 <input type="password" placeholder="12345">
                             </label>
-                            <button>Change</button>
+                            <button class="changeBtn">Change</button>
                         </div>
                     </div>
                     <div class="info-inner__adress adress-inner">
@@ -185,7 +185,93 @@
                         </div>
                     </div>
                 </section>
-                <section class="account__wishlist wishlist-inner">
+                <section class="account__info change-inner" id="change">
+                    <h3 class="change-inner__title content-title">My Info</h3>
+                    <p class="change-inner__subtitle content-subtitle">Add Address</p>
+                    <div class="change-inner__contacts change-contacts-inner">
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">First Name*</p>
+                                <input class="change-input" type="text" placeholder="First Name">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Last Name*</p>
+                                <input class="change-input" type="text" placeholder="Last Name">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Country / Region*</p>
+                                <input class="change-input" type="text" placeholder="Country / Region">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Company Name*</p>
+                                <input class="change-input" type="text" placeholder="Company (optional)">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Street Address*</p>
+                                <input class="change-input" type="text" placeholder="House number and street name">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Apt, suite, unit*</p>
+                                <input class="change-input" type="text" placeholder="apartment, suite, unit, etc. (optional)">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">City*</p>
+                                <input class="change-input" type="text" placeholder="Town / City">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">State*</p>
+                                <input class="change-input" type="text" placeholder="State">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Phone*</p>
+                                <input class="change-input" type="number" placeholder="Phone">
+                            </label>
+                        </div>
+                        <div class="change-contacts-inner__block">
+                            <label>
+                                <p class="change-label">Postal Code*</p>
+                                <input class="change-input" type="text" placeholder="Postal Code">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="change-inner__instruction">
+                        <label>
+                            <p class="change-label">Delivery Instruction</p>
+                            <textarea class="inctruction-area"></textarea>
+                        </label>
+                    </div>
+                    <div class="change-inner__checkbox">
+                        <div class="change-inner__block">
+                            <input type="checkbox" name="change-check" id="agree">
+                            <label for="agree">Agree to our Terms of use and Privacy Policy </label>
+                        </div>
+                        <div class="change-inner__block">
+                            <input type="checkbox" name="change-check" id="subscribe">
+                            <label for="subscribe">Subscribe to our monthly newsletter</label>
+                        </div>          
+                    </div>
+                    <div class="change-inner__buttons">
+                        <button class="change-inner__save">Save</button>
+                        <button class="change-inner__cancel">Cancel</button>
+                    </div>
+                </section>
+                <section class="account__wishlist wishlist-inner" id="wishlist">
                     <h3 class="wishlist__title content-title">Wishlist</h3>
                     <div class="wishlist-inner__group">
                         <div class="wishlist-inner__block">
@@ -246,7 +332,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="account__orders orders-inner">
+                <section class="account__orders orders-inner" id="orders">
                     <h3 class="orders-inner__title content-title">My Orders</h3>
                     <nav class="orders-inner__nav">
                         <ul class="orders-inner__list">
@@ -279,7 +365,7 @@
                                             <div class="content-active__total content-info">Total : $23.00</div>
                                         </div>
                                     </div>
-                                    <button class="content-active__btn">View Detail</button>
+                                    <button class="content-active__btn" id="detailsBtn">View Detail</button>
                                 </div>
                             </div>
                             <div class="content-active__block">
@@ -304,7 +390,7 @@
                                             <div class="content-active__total content-info">Total : $143.00</div>
                                         </div>
                                     </div>
-                                    <button class="content-active__btn">View Detail</button>
+                                    <button class="content-active__btn" id="detailsBtn">View Detail</button>
                                 </div>
                             </div>
                             <div class="content-active__block">
@@ -329,13 +415,13 @@
                                             <div class="content-active__total content-info">Total : $93.00</div>
                                         </div>
                                     </div>
-                                    <button class="content-active__btn">View Detail</button>
+                                    <button class="content-active__btn" id="detailsBtn">View Detail</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="account__orders-details details-inner">
+                <section class="account__orders-details details-inner" id="details">
                     <h3 class="details-inner__title content-title"> <button> < </button> Order Details</h3>
                     <div class="details-inner__order-info">
                         <div class="details-inner__left">
