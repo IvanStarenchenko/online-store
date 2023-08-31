@@ -44,7 +44,6 @@ burgerMenu()
 
 // Аккордеон
 
-
 function accordion() {
   const items = document.querySelectorAll('.accordion__item-trigger')
   items.forEach(item => {
@@ -63,7 +62,7 @@ function accordion() {
 }
 accordion() 
 
-// Аккордеон
+// Аккордеон №2
 if (document.querySelector(".js-accordion")) {
   const asideAccordion = document.querySelector(".js-accordion");
 
@@ -96,7 +95,7 @@ if (document.querySelector(".js-accordion")) {
   }
 }
 
-
+// ------------СЛАЙДЕРЫ
 
 const swiper = new Swiper('.swiper-hero', {
     spaceBetween: 20,
@@ -134,279 +133,287 @@ const swiper = new Swiper('.swiper-hero', {
   // }
   });
 
-  const newSwiper = new Swiper('.new-swiper', {
-    slidesPerView: 4,
-     spaceBetween: 40,
-    // If we need pagination
-     centeredSlides: true,
-    loop: false,
-    pagination: {
-      el: '.new-swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.new-button-next',
-      prevEl: '.new-button-prev',  
-    },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+const newSwiper = new Swiper('.new-swiper', {
+  slidesPerView: 4,
+    spaceBetween: 40,
+  // If we need pagination
+    centeredSlides: true,
+  loop: false,
+  pagination: {
+    el: '.new-swiper-pagination',
+  },
 
-  //   // Responsive breakpoints
-    breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1.5,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      centeredSlides: false,
-    },
-    768: {
-      slidesPerView: 3,
-       spaceBetween: 30,
-      centeredSlides: false,
-    },
-    1024: {
-      slidesPerView: 4,
-       spaceBetween: 30,
-      centeredSlides: false,
-    },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.new-button-next',
+    prevEl: '.new-button-prev',  
+  },
 
-  }
-  });
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 
-  const feedbackSwiper = new Swiper('.feedback-swiper', {
+//   // Responsive breakpoints
+  breakpoints: {
+  // when window width is >= 320px
+  320: {
+    slidesPerView: 1.5,
+    spaceBetween: 20
+  },
+  // when window width is >= 480px
+  480: {
     slidesPerView: 3,
-    spaceBetween: 23,
-    speed: 2000,
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.feedback-swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.feedback-swiper-button-next',
-      prevEl: '.feedback-swiper-button-prev',
-    },
-    autoplay: {
-      delay: 2500,
-      
-    },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+    spaceBetween: 30,
+    centeredSlides: false,
+  },
+  768: {
+    slidesPerView: 3,
+      spaceBetween: 30,
+    centeredSlides: false,
+  },
+  1024: {
+    slidesPerView: 4,
+      spaceBetween: 30,
+    centeredSlides: false,
+  },
 
-  //   // Responsive breakpoints
-  //   breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   },
-  // }
-  });
+}
+});
 
-  const productSwiper = new Swiper('.swiper-product', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    // If we need pagination
-    // pagination: {
-    //   el: '.feedback-swiper-pagination',
-    // },
-  
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.feedback-swiper-button-next',
-    //   prevEl: '.feedback-swiper-button-prev',
-    // },
+const feedbackSwiper = new Swiper('.feedback-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 23,
+  speed: 2000,
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.feedback-swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.feedback-swiper-button-next',
+    prevEl: '.feedback-swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2500,
     
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+
+//   // Responsive breakpoints
+//   breakpoints: {
+//   // when window width is >= 320px
+//   320: {
+//     slidesPerView: 3,
+//     spaceBetween: 20
+//   },
+//   // when window width is >= 480px
+//   480: {
+//     slidesPerView: 3,
+//     spaceBetween: 30
+//   },
+// }
+});
+
+const productSwiper = new Swiper('.swiper-product', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // If we need pagination
+  // pagination: {
+  //   el: '.feedback-swiper-pagination',
+  // },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: '.feedback-swiper-button-next',
+  //   prevEl: '.feedback-swiper-button-prev',
+  // },
   
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
 
-  //   // Responsive breakpoints
-  //   breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   },
-  // }
-  });
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 
-  document.addEventListener('DOMContentLoaded', () => {
+//   // Responsive breakpoints
+//   breakpoints: {
+//   // when window width is >= 320px
+//   320: {
+//     slidesPerView: 3,
+//     spaceBetween: 20
+//   },
+//   // when window width is >= 480px
+//   480: {
+//     slidesPerView: 3,
+//     spaceBetween: 30
+//   },
+// }
+});
 
-    const newButton = document.getElementById('newBtn');
-    const recommendedButton = document.getElementById('recommendedBtn');
+//------Переключение каталога товаров на новые и рекоммендованые в каталоге товаров
+document.addEventListener('DOMContentLoaded', () => {
 
-  
-    const men = document.getElementById('new');
-    const women = document.getElementById('recommended');
-     if(recommendedButton){
-      recommendedButton.addEventListener('click', () => {
-        men.style.display = 'grid';
-        women.style.display = 'none';
-        recommendedButton.classList.add('active');
-        newButton.classList.remove('active');
-      });
-     }
-    
-     if(newButton){
-       newButton.addEventListener('click', () => {
-        women.style.display = 'grid';
-        women.classList.add('active');
-        men.style.display = 'none';
-        recommendedButton.classList.remove('active');
-        newButton.classList.add('active');
-      });
-     }
-   
- 
-  });
-  
-  document.addEventListener('DOMContentLoaded', () => {
+  const newButton = document.getElementById('newBtn');
+  const recommendedButton = document.getElementById('recommendedBtn');
 
-    const xs = document.getElementById('xs');
-    const s = document.getElementById('s');
-    const m = document.getElementById('m');
-    const l = document.getElementById('l');
-    const xl = document.getElementById('xl');
-  
-    const xsPrice = document.getElementById('xsPrice');
-    const sPrice = document.getElementById('sPrice');
-    const mPrice = document.getElementById('mPrice');
-    const lPrice = document.getElementById('lPrice');
-    const xlPrice = document.getElementById('xlPrice');
 
-    if(xs){
-      xs.addEventListener('click', () => {
-        xsPrice.style.display = 'flex';
-        sPrice.style.display = 'none';
-        mPrice.style.display = 'none';
-        lPrice.style.display = 'none';
-        xlPrice.style.display = 'none';
-      });
-    }
-  
-    if(s){
-      s.addEventListener('click', () => {
-        sPrice.style.display = 'flex';
-        xsPrice.style.display = 'none';
-        mPrice.style.display = 'none';
-        lPrice.style.display = 'none';
-        xlPrice.style.display = 'none';
-      });
-    }
-   
-    if(m){
-      m.addEventListener('click', () => {
-        mPrice.style.display = 'flex';
-        sPrice.style.display = 'none';
-        xsPrice.style.display = 'none';
-        lPrice.style.display = 'none';
-        xlPrice.style.display = 'none';
-      });
-    }
-
-   
-    if(l){
-      l.addEventListener('click', () => {
-        lPrice.style.display = 'flex';
-        sPrice.style.display = 'none';
-        mPrice.style.display = 'none';
-        xsPrice.style.display = 'none';
-        xlPrice.style.display = 'none';
-      });
-    }
-   
-    if(xl){
-      xl.addEventListener('click', () => {
-        xlPrice.style.display = 'flex';
-        sPrice.style.display = 'none';
-        mPrice.style.display = 'none';
-        lPrice.style.display = 'none';
-        xsPrice.style.display = 'none';
-      });
-    }
-   
-  });
-  document.addEventListener('DOMContentLoaded', () => {
-
-    const descriptionBtn = document.getElementById('descriptionBtn');
-    const commentsBtn = document.getElementById('commentsBtn');
-    const questionBtn = document.getElementById('questionBtn');
-    
-  
-    const description = document.getElementById('description');
-    const comments = document.getElementById('comments');
-    const question = document.getElementById('question');
-
-    if(descriptionBtn){
-      descriptionBtn.addEventListener('click', () => {
-        description.style.display = 'flex';
-  
-        descriptionBtn.classList.add('border-bottom');
-        commentsBtn.classList.remove('border-bottom');
-        questionBtn.classList.remove('border-bottom');
-  
-        comments.style.display = 'none';
-        question.style.display = 'none';
-      });
-    }
-  
-    if(commentsBtn){
-      commentsBtn.addEventListener('click', () => {
-      comments.style.display = 'flex';
-
-      commentsBtn.classList.add('border-bottom');
-      descriptionBtn.classList.remove('border-bottom');
-      questionBtn.classList.remove('border-bottom');
-      
-      description.style.display = 'none';
-      question.style.display = 'none';
+  const men = document.getElementById('new');
+  const women = document.getElementById('recommended');
+    if(recommendedButton){
+    recommendedButton.addEventListener('click', () => {
+      men.style.display = 'grid';
+      women.style.display = 'none';
+      recommendedButton.classList.add('active');
+      newButton.classList.remove('active');
     });
     }
-    
-    if(questionBtn){
-      questionBtn.addEventListener('click', () => {
-        question.style.display = 'flex';
   
-        questionBtn.classList.add('border-bottom');
-        descriptionBtn.classList.remove('border-bottom');
-        commentsBtn.classList.remove('border-bottom');
-  
-        comments.style.display = 'none';
-        description.style.display = 'none';
-      });
+    if(newButton){
+      newButton.addEventListener('click', () => {
+      women.style.display = 'grid';
+      women.classList.add('active');
+      men.style.display = 'none';
+      recommendedButton.classList.remove('active');
+      newButton.classList.add('active');
+    });
     }
-   
- 
+  
+
+});
+
+//------ Изменение цены при нажатии на размер
+document.addEventListener('DOMContentLoaded', () => {
+
+  const xs = document.getElementById('xs');
+  const s = document.getElementById('s');
+  const m = document.getElementById('m');
+  const l = document.getElementById('l');
+  const xl = document.getElementById('xl');
+
+  const xsPrice = document.getElementById('xsPrice');
+  const sPrice = document.getElementById('sPrice');
+  const mPrice = document.getElementById('mPrice');
+  const lPrice = document.getElementById('lPrice');
+  const xlPrice = document.getElementById('xlPrice');
+
+  if(xs){
+    xs.addEventListener('click', () => {
+      xsPrice.style.display = 'flex';
+      sPrice.style.display = 'none';
+      mPrice.style.display = 'none';
+      lPrice.style.display = 'none';
+      xlPrice.style.display = 'none';
+    });
+  }
+
+  if(s){
+    s.addEventListener('click', () => {
+      sPrice.style.display = 'flex';
+      xsPrice.style.display = 'none';
+      mPrice.style.display = 'none';
+      lPrice.style.display = 'none';
+      xlPrice.style.display = 'none';
+    });
+  }
+  
+  if(m){
+    m.addEventListener('click', () => {
+      mPrice.style.display = 'flex';
+      sPrice.style.display = 'none';
+      xsPrice.style.display = 'none';
+      lPrice.style.display = 'none';
+      xlPrice.style.display = 'none';
+    });
+  }
+
+  
+  if(l){
+    l.addEventListener('click', () => {
+      lPrice.style.display = 'flex';
+      sPrice.style.display = 'none';
+      mPrice.style.display = 'none';
+      xsPrice.style.display = 'none';
+      xlPrice.style.display = 'none';
+    });
+  }
+  
+  if(xl){
+    xl.addEventListener('click', () => {
+      xlPrice.style.display = 'flex';
+      sPrice.style.display = 'none';
+      mPrice.style.display = 'none';
+      lPrice.style.display = 'none';
+      xsPrice.style.display = 'none';
+    });
+  }
+  
+});
+
+//-------Переключение контента по кнопкам на странице товара
+document.addEventListener('DOMContentLoaded', () => {
+
+  const descriptionBtn = document.getElementById('descriptionBtn');
+  const commentsBtn = document.getElementById('commentsBtn');
+  const questionBtn = document.getElementById('questionBtn');
+  
+
+  const description = document.getElementById('description');
+  const comments = document.getElementById('comments');
+  const question = document.getElementById('question');
+
+  if(descriptionBtn){
+    descriptionBtn.addEventListener('click', () => {
+      description.style.display = 'flex';
+
+      descriptionBtn.classList.add('border-bottom');
+      commentsBtn.classList.remove('border-bottom');
+      questionBtn.classList.remove('border-bottom');
+
+      comments.style.display = 'none';
+      question.style.display = 'none';
+    });
+  }
+
+  if(commentsBtn){
+    commentsBtn.addEventListener('click', () => {
+    comments.style.display = 'flex';
+
+    commentsBtn.classList.add('border-bottom');
+    descriptionBtn.classList.remove('border-bottom');
+    questionBtn.classList.remove('border-bottom');
+    
+    description.style.display = 'none';
+    question.style.display = 'none';
   });
+  }
+  
+  if(questionBtn){
+    questionBtn.addEventListener('click', () => {
+      question.style.display = 'flex';
+
+      questionBtn.classList.add('border-bottom');
+      descriptionBtn.classList.remove('border-bottom');
+      commentsBtn.classList.remove('border-bottom');
+
+      comments.style.display = 'none';
+      description.style.display = 'none';
+    });
+  }
+  
+
+});
+
+
+// -------Счётчик в корзине, который увеличивает цену в total
 
 document.addEventListener('DOMContentLoaded', function(){
+  
   const counter = document.getElementById('counter');
   const decrementButton = document.getElementById('decrement');
   const incrementButton = document.getElementById('increment');
@@ -503,6 +510,8 @@ document.addEventListener('DOMContentLoaded', function(){
   }  
 });
 
+
+// --------Показывает пароль по нажатию
 document.addEventListener('DOMContentLoaded', () => {
   const passwordInput = document.getElementById('passwordInput');
 
@@ -524,4 +533,81 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+});
+
+
+
+// --------Личный кабинет. Переключение страниц
+document.addEventListener('DOMContentLoaded', () => {
+
+  const ordersBtn = document.getElementById('ordersBtn');
+  const wishlistBtn = document.getElementById('wishlistBtn');
+  const infoBtn = document.getElementById('infoBtn');
+  const detailsBtn = document.getElementById('detailsBtn');
+  const changeBtn = document.querySelectorAll('.changeBtn');
+
+
+  const orders = document.getElementById('orders');
+  const wishlist = document.getElementById('wishlist');
+  const info = document.getElementById('info');
+  const details = document.getElementById('details');
+  const change = document.getElementById('change');
+
+
+  if(ordersBtn){
+    ordersBtn.addEventListener('click', () => {
+      orders.style.display = 'grid';
+      wishlist.style.display = 'none';
+      info.style.display = 'none';
+      details.style.display = 'none';
+      change.style.display = 'none';
+    });
+  }
+
+  if(wishlistBtn){
+    wishlistBtn.addEventListener('click', () => {
+      wishlist.style.display = 'grid';
+      orders.style.display = 'none';
+      info.style.display = 'none';
+      details.style.display = 'none';
+      change.style.display = 'none';
+    });
+  }
+  if(infoBtn){
+    infoBtn.addEventListener('click', () => {
+      info.style.display = 'grid';
+      orders.style.display = 'none';
+      wishlist.style.display = 'none';
+      details.style.display = 'none';
+      change.style.display = 'none';
+    });
+  }
+  if(detailsBtn){
+    detailsBtn.addEventListener('click', () => {
+      details.style.display = 'grid';
+      info.style.display = 'none';
+      orders.style.display = 'none';
+      wishlist.style.display = 'none';
+      change.style.display = 'none';
+    });
+  }
+  
+  // if(changeBtn){
+  //   changeBtn.addEventListener('click', () => {
+  //     change.style.display = 'grid';
+  //     orders.style.display = 'none';
+  //     wishlist.style.display = 'none';
+  //     info.style.display = 'none';
+  //     details.style.display = 'none';
+  //   });
+  // }
+  changeBtn.forEach(function(changeBtn) {
+    changeBtn.addEventListener('click', function() {
+      change.style.display = 'grid';
+      orders.style.display = 'none';
+      wishlist.style.display = 'none';
+      info.style.display = 'none';
+      details.style.display = 'none';
+    });
+});
 });

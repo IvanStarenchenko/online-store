@@ -4,7 +4,7 @@
     }
 }
 .details-inner {
-
+    display: none;
     &_color {
     }
 
@@ -12,7 +12,6 @@
         display: flex;
         align-items: center;
         column-gap: 15px;
-        margin-top: 100px;
         margin-bottom: 50px;
         button{
             background-color: transparent;

@@ -78,7 +78,6 @@
 .info-inner {
     display: none;
     &__title{
-        margin-top: 97px;
         margin-bottom: 20px;
     }
     &__subtitle{
@@ -213,6 +212,7 @@
     font-weight: 600;
     line-height: 119.643%;
     letter-spacing: 0.56px;
+    margin-top: 97px;
 }
 .content-subtitle{
     color: $mainColor;

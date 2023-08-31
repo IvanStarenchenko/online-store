@@ -3514,7 +3514,6 @@ footer {
 }
 
 .info-inner__title {
-  margin-top: 97px;
   margin-bottom: 20px;
 }
 
@@ -3694,6 +3693,7 @@ footer {
   font-weight: 600;
   line-height: 119.643%;
   letter-spacing: 0.56px;
+  margin-top: 97px;
 }
 
 .content-subtitle {
@@ -3702,6 +3702,166 @@ footer {
   font-weight: 600;
   line-height: 152.273%;
   letter-spacing: 0.44px;
+}
+
+.account__info {
+  display: none;
+}
+
+.change-inner__subtitle {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.change-inner__contacts {
+  display: grid;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 426px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-inner__instruction {
+  margin-bottom: 30px;
+}
+
+.change-inner__instruction .inctruction-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 895px;
+  padding: 17px 22px 112px 22px;
+  border-radius: 8px;
+  background: #F6F6F6;
+  outline: none;
+  font-family: inherit;
+}
+
+.change-inner__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 18px;
+  margin-bottom: 60px;
+}
+
+.change-inner__checkbox .change-inner__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  /* Стилизация внешнего вида чекбокса */
+  /* Изменение внешнего вида псевдо-чекбокса при выборе */
+}
+
+.change-inner__checkbox .change-inner__block input[type=checkbox] {
+  display: none;
+}
+
+.change-inner__checkbox .change-inner__block label {
+  position: relative;
+  padding-left: 30px;
+  /* создание места для "псевдо-чекбокса" и галочки */
+  cursor: pointer;
+}
+
+.change-inner__checkbox .change-inner__block label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.change-inner__checkbox .change-inner__block label::after {
+  content: "✓";
+  /* Unicode-символ галочки */
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  font-size: 18px;
+  color: #fff;
+  /* цвет галочки */
+  visibility: hidden;
+}
+
+.change-inner__checkbox .change-inner__block input[type=checkbox]:checked + label::before {
+  background-color: #3C4242;
+  /* измените цвет на свой вкус */
+  border-color: #3C4242;
+}
+
+.change-inner__checkbox .change-inner__block input[type=checkbox]:checked + label::before + label::after {
+  visibility: visible;
+}
+
+.change-inner__buttons {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.change-inner__buttons button {
+  padding: 12px 40px;
+  border-radius: 8px;
+  background-color: #F6F6F6;
+  color: #807D7E;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.change-inner__buttons .change-inner__save {
+  background-color: #8A33FD;
+  color: #fff;
+}
+
+.change-inner .change-input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #F6F6F6;
+  outline: none;
+}
+
+.change-inner .change-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.change-contacts-inner {
+  margin-bottom: 32px;
 }
 
 .account__wishlist {
@@ -3790,16 +3950,7 @@ footer {
   line-height: normal;
 }
 
-.wishlist__title {
-  margin-top: 100px;
-}
-
-.account__orders {
-  display: none;
-}
-
 .orders-inner__title {
-  margin-top: 100px;
   margin-bottom: 38px;
 }
 
@@ -3997,6 +4148,10 @@ footer {
   background: #8A33FD;
 }
 
+.details-inner {
+  display: none;
+}
+
 .details-inner__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4007,7 +4162,6 @@ footer {
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
-  margin-top: 100px;
   margin-bottom: 50px;
 }
 
