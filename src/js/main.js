@@ -209,37 +209,19 @@ const feedbackSwiper = new Swiper('.feedback-swiper', {
 const productSwiper = new Swiper('.swiper-product', {
   slidesPerView: 1,
   spaceBetween: 20,
-  // If we need pagination
-  // pagination: {
-  //   el: '.feedback-swiper-pagination',
-  // },
-
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.feedback-swiper-button-next',
-  //   prevEl: '.feedback-swiper-button-prev',
-  // },
-  
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-
-//   // Responsive breakpoints
-//   breakpoints: {
-//   // when window width is >= 320px
-//   320: {
-//     slidesPerView: 3,
-//     spaceBetween: 20
-//   },
-//   // when window width is >= 480px
-//   480: {
-//     slidesPerView: 3,
-//     spaceBetween: 30
-//   },
-// }
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: {
+      el: '.swiper-thumbs',
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
 });
+
 
 //------Переключение каталога товаров на новые и рекоммендованые в каталоге товаров
 document.addEventListener('DOMContentLoaded', () => {
@@ -595,4 +577,21 @@ document.addEventListener('DOMContentLoaded', () => {
       details.style.display = 'none';
     });
 });
+});
+
+$(function() {
+  $("#price-slider").slider({
+    range: true,
+    min: 0,
+    max: 2000,
+    values: [100, 1000],
+    slide: function(event, ui) {
+      $("#min-price").text("$" + ui.values[0]);
+      $("#max-price").text("$" + ui.values[1]);
+    }
+  });
+  
+  // Инициализация начальных значений
+  $("#min-price").text("$" + $("#price-slider").slider("values", 0));
+  $("#max-price").text("$" + $("#price-slider").slider("values", 1));
 });
