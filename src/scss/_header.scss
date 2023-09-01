@@ -29,43 +29,18 @@
         position: relative;
         font-size: 18px;
         line-height: normal;
+        color: #807D7E;
         &:hover {
             color: inherit;
-
-            &:after {
-                transform: scale(1);
-            }
+            text-shadow: 0 0 .15px #000, 0 0 .15px #000;
         }
     }
 
     // .menu__item-link
     &__item-link {
-        color: #807D7E;
-        display: flex;
         position: relative;
         transition: 0.5s color;
-        &:after {
-            position: absolute;
-            content: '';
-            left: 0;
-            bottom: -3px;
-            background: #131418;
-            height: 1px;
-            width: 100%;
-            transform: scale(0);
-            transition: color 0.3s ease ;
-
-            // Comment if you need border animation
-            display: none;
-        }
-        &:hover {
-            color: inherit;
-            text-shadow: 0 0 .15px #000, 0 0 .15px #000;
-
-            &:after {
-                transform: scale(1);
-            }
-        }
+        
     }
 
     // Mobile menu styles
@@ -128,25 +103,14 @@
     cursor: pointer;
    }
 }
+
+
+
+
+
+
 .burger {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ========================= [ Burger styles ] =========================
 .burger {

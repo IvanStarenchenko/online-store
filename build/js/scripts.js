@@ -67,8 +67,9 @@ if (document.querySelector(".js-accordion")) {
   const asideAccordion = document.querySelector(".js-accordion");
 
   asideAccordion.addEventListener("click", (e) => {
-    const activePanel = e.target.closest(".js-accordion-block");
-    if (!activePanel) return;
+    const activeButton = e.target.closest(".js-accordion-trigger");
+    if (!activeButton) return; // Игнорируем клик, если он был не на заголовке
+    const activePanel = activeButton.closest(".js-accordion-block");
     toggleAccordion(activePanel);
   });
 
@@ -78,28 +79,23 @@ if (document.querySelector(".js-accordion")) {
     const activePanelIsOpened = activeButton.getAttribute("aria-expanded");
 
     if (activePanelIsOpened === "true") {
-      panelToActivate
-        .querySelector(".js-accordion-trigger")
-        .setAttribute("aria-expanded", false);
-
-      panelToActivate
-        .querySelector(".js-accordion-content")
-        .setAttribute("aria-hidden", true);
+      activeButton.setAttribute("aria-expanded", false);
+      activePanel.setAttribute("aria-hidden", true);
     } else {
-      panelToActivate.querySelector(".js-accordion-trigger").setAttribute("aria-expanded", true);
-
-      panelToActivate
-        .querySelector(".js-accordion-content")
-        .setAttribute("aria-hidden", false);
+      activeButton.setAttribute("aria-expanded", true);
+      activePanel.setAttribute("aria-hidden", false);
     }
   }
 }
+
 
 // ------------СЛАЙДЕРЫ
 
 const swiper = new Swiper('.swiper-hero', {
     spaceBetween: 20,
     speed: 2000,
+    parallax: true,
+    loop: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -185,6 +181,7 @@ const feedbackSwiper = new Swiper('.feedback-swiper', {
   slidesPerView: 3,
   spaceBetween: 23,
   speed: 2000,
+  parallax: true,
   loop: true,
   // If we need pagination
   pagination: {
@@ -599,7 +596,7 @@ $(function() {
     range: true,
     min: 0,
     max: 2000,
-    values: [100, 1000],
+    values: [700, 1250],
     slide: function(event, ui) {
       $("#min-price").text("$" + ui.values[0]);
       $("#max-price").text("$" + ui.values[1]);
@@ -610,4 +607,5 @@ $(function() {
   $("#min-price").text("$" + $("#price-slider").slider("values", 0));
   $("#max-price").text("$" + $("#price-slider").slider("values", 1));
 });
+
 

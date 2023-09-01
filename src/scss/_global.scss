@@ -129,6 +129,7 @@ input[type=number] {
       
 }
 
+// ------------------------ СКРЫТЬ ПАРОЛЬ
 .hide-button{
     display: flex;
     align-items: center;
@@ -138,9 +139,7 @@ input[type=number] {
     cursor: pointer;
 }
 
-
-#price-slider {
-    width: 80%;
-    margin: 20px auto;
-  }
-  
+// -------TOP LINKS
+.info__navigation{
+    margin-top: 23px;
+}
