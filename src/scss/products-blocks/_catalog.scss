@@ -108,14 +108,7 @@
         }
     }
 
-    &__list {
-    }
 
-    &__item {
-    }
-    .catalog-price__list{
-        
-    }
     .catalog-colors__list{
         display: grid;
         gap: 20px;
@@ -229,11 +222,46 @@
       }
 }
 
+// ---------------------FILTER
+#price-slider {
+    width: 88%;
+    margin: 20px auto;
+    overflow: visible;
+    position: relative;
+    height: 5px;
+    span{
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;    
+        position: absolute;
+        top: -8px;
+        outline: none;
+        background-color: #8A33FD;      
+    }
+    div{
+        background-color: #8A33FD;
 
+    }
+  }
+#price-range{
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: $mainColor;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+span{
+    min-width: 97px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #BEBCBD;
+}
+}
+ 
 
 // -------------------------------------------------ACCORDION
-
-
 
 
 .catalog-products {
@@ -290,7 +318,6 @@
     }
 }
 
-
 // --------------------ONLINE
 
 .online {
@@ -323,14 +350,6 @@ margin-bottom: 100px;
 
 // ----------------------------PRICES
 
-.best-prices {
-
-    &__title {
-    }
-
-    &__body {
-    }
-}
 
 .best-inner {
     padding: 50px 84px;
@@ -370,8 +389,7 @@ margin-bottom: 100px;
         letter-spacing: 0.48px;
     }
 
-    &__clothing {
-    }
+  
 
     &__price {
         padding-right: 30px;
